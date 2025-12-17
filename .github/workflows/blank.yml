@@ -1,0 +1,59 @@
+name: Sync Google Sheets
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # 每 6 小时自动同步（UTC）
+  workflow_dispatch:        # 支持手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ 检出仓库
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # 2️⃣ 拉取 Google Sheets CSV
+      - name: Fetch CSVs
+        run: |
+          # 创建所有目录
+          mkdir -p data/skill data/skill_main data/stats data/character_stats data/glossary data/equipment data/crystal data/enchant data/registlet data/potion data/quest
+
+          # ---------- Skill ----------
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=170573319&single=true&output=csv&range=A:Q' -o data/skill/base.csv
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=170573319&single=true&output=csv&range=R:R' -o data/skill/lang_en.csv
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=170573319&single=true&output=csv&range=S:S' -o data/skill/lang_ja.csv
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=170573319&single=true&output=csv&range=T:T' -o data/skill/lang_zh_cn.csv
+
+          # ---------- SkillMain ----------
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=2033454381&single=true&output=csv&range=A:D' -o data/skill_main/base.csv
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=2033454381&single=true&output=csv&range=F:F' -o data/skill_main/lang_en.csv
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=2033454381&single=true&output=csv&range=G:G' -o data/skill_main/lang_ja.csv
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=2033454381&single=true&output=csv&range=H:H' -o data/skill_main/lang_zh_cn.csv
+
+          # ---------- Stats ----------
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=616452461&single=true&output=csv&range=A:F' -o data/stats/base.csv
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=1353062937&single=true&output=csv&range=B:C' -o data/stats/lang_en.csv
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=1353062937&single=true&output=csv&range=F:G' -o data/stats/lang_zh_cn.csv
+
+          # ---------- CharacterStats ----------
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTHrEp60Q4BFKM2yI09FyJWZFKnxif0oZfTkWiXXL-7am6BWoAtN___hxKtFDkbofflHQgrON74qOdk/pub?gid=0&single=true&output=csv&range=A:I' -o data/character_stats/base.csv
+
+          # ---------- Glossary ----------
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=1107380961&single=true&output=csv&range=A:C' -o data/glossary/base.csv
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=1107380961&single=true&output=csv&range=D:E' -o data/glossary/lang_en.csv
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=1107380961&single=true&output=csv&range=F:G' -o data/glossary/lang_ja.csv
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=1107380961&single=true&output=csv&range=H:I' -o data/glossary/lang_zh_cn.csv
+
+          # ---------- 其他表格 Equipment / Crystal / Enchant / Registlet / Potion / Quest ----------
+          # 按你 DataPath / DataPathLang URL 同样增加 curl 命令
+
+      # 3️⃣ 提交更新到仓库
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data
+          git commit -m "sync sheets (6h)" || echo "no changes"
+          git push
