@@ -1,7 +1,7 @@
 名稱 (Name),屬性分類,屬性名稱,屬性值 (Property Value),屬性值2
 0,0,武器,,
 1,0,定點王,,
-出土魔像,stats,guard_regenerate,5,
+出土11魔像,stats,guard_regenerate,5,
 ,,guard_power,5,
 魔像鑄工,stats,guard_regenerate,7,
 ,,guard_power,7,
@@ -2260,4 +2260,5 @@ ASPD+160,stats,aspd,160,
 ,obtain,,,
 暴擊率+5,stats,critical_rate,5,
 ,obtain,,暗幼龍，,
+
 1,5,活動王（小怪）,,
