@@ -1559,6 +1559,16 @@ This skill has a higher crit rate but lower accuracy.
 
 
 
+
+
+
+
+
+
+
+
+
+
 Base on skill element
 
 
@@ -3942,6 +3952,8 @@ Grand Buster Lance
 Recover the stack of punishments to 3.
 punishments
 Grand Buster Lance does magical proration.
+
+
 
 
 
@@ -8677,6 +8689,22 @@ The charge time is not affected by CSPD.
 
 
 The charge time is not affected by CSPD.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
