@@ -1685,6 +1685,13 @@ G伊科諾斯,stats,max_hp,1000,
 ,,long_range_damage,5,sub.arrow
 ,,additional_meele,50,sub.dagger
 ,,aggro,25,sub.shield
+庫貝龍,stats,max_mp,300,
+,,long_range_damage,5,
+,,dex,5%,
+,,long_range_damage,7,sub.arrow
+,,additional_meele,75,sub.dagger
+,,aggro,35,sub.shield
+,other,enhancer,掮客哥布林,
 茄龍歐瓦比昂,stats,max_mp,300,
 ,,short_range_damage,4%,
 ,,aspd,500,
