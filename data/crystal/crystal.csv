@@ -955,11 +955,11 @@ DX法伊特II,stats,atk,3%,
 ,,max_hp,-20%,
 ,,dex,5%,sub.shield
 ,,magic_pierce,5%,body.dodge
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
+不知火童子,stats,short_range_damage,10,
+,,accuracy,100,
+,,max_hp,-10%,
+,,max_mp,-100,
+,,motion_speed,1,body.defense
 ,,,,
 ,,,,
 ,,,,
