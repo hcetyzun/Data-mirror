@@ -1568,19 +1568,42 @@ This skill has a higher crit rate but lower accuracy.
 
 
 
+
+
+
+
+
+
+
+
 Base on skill element
 
 
 
 Element | Skill Name | Ailment
 
-Neutral | Magic: Javelin | #[Flinch]
-Fire | Fire Javelin | #[Ignite]
-Water | Ice Javelin | #[Freeze]
-Earth | Rock Javelin | #[Slow]
-Wind | Wind Javelin | #[Blind]
-Light | Holy Javelin | #[Dizzy]
-Dark | Dark Javelin | #[Fear]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1593,18 +1616,6 @@ Dark | Dark Javelin | #[Fear]
 
 
 Stop
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1697,10 +1708,6 @@ The casting time is not affected by CSPD.
 Generates ![100] aggro to the target per second  while casting. This aggro is not affected by aggro% stat.
 CSPD affects additional aggro's amount. The reduction is calculated in the same way as the casting time.
 "It means that for the part with CSPD≦1000, every 20 CSPD will reduce aggro by 1%. And for the part with CSPD>1000, every 180 CSPD will reduce aggro by 1%."
-
-
-
-
 
 
 
@@ -2054,6 +2061,17 @@ Knock Back
 
 
 Damage of this skill wouldn't be affected by the combo effect.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4340,10 +4358,6 @@ Grand Buster Lance does magical proration.
 
 
 
-
-
-
-
 Give enemy two damage in one unsheathe. Two damage is judged respectively.
 
 
@@ -4901,8 +4915,6 @@ This skill is considered as unsheathed attack.
 
 
 400+50LV+BDEX/2
-
-
 
 
 
