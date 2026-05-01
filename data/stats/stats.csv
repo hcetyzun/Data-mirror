@@ -60,6 +60,7 @@ stronger_against_earth,對地屬性傷害,,無,3,
 stronger_against_wind,對風屬性傷害,,無,3,
 stronger_against_light,對光屬性傷害,,無,3,
 stronger_against_dark,對暗屬性傷害,,無,3,
+stronger_against_weaker_element,對弱點屬性傷害,,無,3,1
 neutral_resistance,抗無屬性,,無,4,
 fire_resistance,抗火屬性,,無,4,
 water_resistance,抗水屬性,,無,4,

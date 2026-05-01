@@ -440,17 +440,25 @@
 ,4,0,4
 ,5,-,5
 ,6,5,6
-1,3,,E3 DRB H2 S L E3 V L SR DRB SR DR H2 S L E V L E DR SR H S L2 E4 S
+1,3,,"
+E3 DRB H2 S L
+E3 V L
+SR DRB SR DR H2 S L
+E V E DRB S L
+E DR SR DB E DRB S L
+E3 DR SR DB L
+E5 DR S L
+E4 S"
 ,0,-,1
 ,1,0,2
 ,2,1,0
 ,3,1,3
-,4,0,4
-,5,4,5
-,6,-,6
-,,,
-,,,
-,,,
+,4,0,5
+,5,4,4
+,6,-,9
+,7,8,6
+,8,4,7
+,9,8,8
 ,,,
 1,4,,S DRB SR H S L E V E4 S L SRB DRB SR H S L V V L V DR SR H SR H S L V L DR H3 SR H S
 ,0,-,0

@@ -339,17 +339,18 @@ magic_element_extra_damage,法術額外屬性傷害,%,magic_stronger_against_ele
 ,,,@magic_device,"#cvalue, ""基礎INT÷10""",Math.floor(@int/10),,,
 stronger_against_neutral,對無屬性傷害,%,stronger_against_neutral,,100,0~,變數值為0時,對無屬性目標獲得的額外傷害加成。
 stronger_against_fire,對火屬性傷害,%,stronger_against_fire,,100,0~,變數值為0時,對火屬性目標獲得的額外傷害加成。
-,,,#,"#cvalue, ""水屬性""",@element.water*25,,,
+,,,#,"#cvalue, ""水屬性""",@element.water*$stronger_against_weaker_element,,,
 stronger_against_water,對水屬性傷害,%,stronger_against_water,,100,0~,變數值為0時,對水屬性目標獲得的額外傷害加成。
-,,,#,"#cvalue, ""風屬性""",@element.wind*25,,,
+,,,#,"#cvalue, ""風屬性""",@element.wind*$stronger_against_weaker_element,,,
 stronger_against_earth,對地屬性傷害,%,stronger_against_earth,,100,0~,變數值為0時,對地屬性目標獲得的額外傷害加成。
-,,,#,"#cvalue, ""火屬性""",@element.fire*25,,,
+,,,#,"#cvalue, ""火屬性""",@element.fire*$stronger_against_weaker_element,,,
 stronger_against_wind,對風屬性傷害,%,stronger_against_wind,,100,0~,變數值為0時,對風屬性目標獲得的額外傷害加成。
-,,,#,"#cvalue, ""地屬性""",@element.earth*25,,,
+,,,#,"#cvalue, ""地屬性""",@element.earth*$stronger_against_weaker_element,,,
 stronger_against_light,對光屬性傷害,%,stronger_against_light,,100,0~,變數值為0時,對光屬性目標獲得的額外傷害加成。
-,,,#,"#cvalue, ""暗屬性""",@element.dark*25,,,
+,,,#,"#cvalue, ""暗屬性""",@element.dark*$stronger_against_weaker_element,,,
 stronger_against_dark,對暗屬性傷害,%,stronger_against_dark,,100,0~,變數值為0時,對暗屬性目標獲得的額外傷害加成。
-,,,#,"#cvalue, ""光屬性""",@element.light*25,,,
+,,,#,"#cvalue, ""光屬性""",@element.light*$stronger_against_weaker_element,,,
+stronger_against_weaker_element,對弱點屬性傷害,%,stronger_against_weaker_element,,25,,變數值為0時,
 0,屬性、類型減傷,,,,,,,
 neutral_resistance,受到無屬性傷害,%,neutral_resistance,,100-reduceValue(#cvalue),,變數值為0時,自身受到無屬性的傷害時，損傷會乘上此倍率。
 fire_resistance,受到火屬性傷害,%,fire_resistance,,100-reduceValue(#cvalue),,變數值為0時,自身受到火屬性的傷害時，損傷會乘上此倍率。
