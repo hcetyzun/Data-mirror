@@ -50,7 +50,6 @@ The upcoming 11 auto attacks
 
 
 
-"DEF,MDEF and Dodge would be zeroed."
 The ![Rampage State] would be removed if getting inflicted by any ailments.
 The remaining times would not decrease if the attack was evaded or missed.
 Enhanced Attack
@@ -75,12 +74,19 @@ Lightning Slash
 
 
 
+
+
 #[Perfect Aim].
 "![Double Slit] and ![Lightning Slash] shares 1 proration check. They consume buffs that apply to the next skill, also end up the buff that sustains until the next skill casted."
 ![Lightning Slash] is not affected by motion speed nor !S[Sword Techniques].
 The combo effects do not affect this skill's damage. 
 "Under the Rampage State, this skill cannot be casted again."
 Only Mainhand ATK will be multiplied when using dual swords
+
+
+
+
+
 
 
 
@@ -159,7 +165,8 @@ Casting Supersonic Blade also gains buff: Charged Blade.
 
 
 
-Cannot crit
+
+
 
 
 
@@ -168,10 +175,14 @@ Critical damage bonus is at least ![1] and at most ![10].
 
 
 
+
+
 Critical damage bonus is at least ![1] and at most ![5].
 
 
 Critical damage bonus is at least ![1] and at most ![5].
+
+
 "Shoots a Blade Wind at the target. The Blade Wind disappears after dealing damage, and creates a Tempest at the target's position."
 
 
@@ -1576,6 +1587,9 @@ This skill has a higher crit rate but lower accuracy.
 
 
 
+
+
+
 Base on skill element
 
 
@@ -1708,6 +1722,7 @@ The casting time is not affected by CSPD.
 Generates ![100] aggro to the target per second  while casting. This aggro is not affected by aggro% stat.
 CSPD affects additional aggro's amount. The reduction is calculated in the same way as the casting time.
 "It means that for the part with CSPD≦1000, every 20 CSPD will reduce aggro by 1%. And for the part with CSPD>1000, every 180 CSPD will reduce aggro by 1%."
+
 
 
 
@@ -8793,6 +8808,7 @@ The charge time is not affected by CSPD.
 
 
 The charge time is not affected by CSPD.
+
 
 
 
