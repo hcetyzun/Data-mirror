@@ -3,7 +3,7 @@ name: Sync Google Sheets
 on:
   schedule:
     # - cron: '0 */6 * * *'   # 每 6 小时自动同步（UTC）
-    - cron: '0 14 * * *'   # 每天一次（UTC）
+    - cron: '10 14 * * *'   # 每天一次（UTC 14:10）
   workflow_dispatch:        # 支持手动触发
 
 jobs:
