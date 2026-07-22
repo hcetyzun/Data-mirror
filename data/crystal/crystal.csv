@@ -562,6 +562,17 @@
 ,,motion_speed,2%,sub.1h_sword
 ,,max_hp,-9%,sub.1h_sword
 ,,int,5%,magic_device
+使靈者烏桑,stats,matk,12%,
+,,additional_magic,125,
+,,aspd,200,
+,,magical_barrier,200,
+,other,enhancer,死靈魔兔,
+,obtain,name,11周年特殊競技場,
+嗚咯咯科隆,stats,short_range_damage,12,
+,,cspd,1000,
+,,max_mp,-2000,
+,other,enhancer,死靈科隆,
+,obtain,name,11周年特殊競技場,
 ,,,,
 ,,,,
 ,,,,
