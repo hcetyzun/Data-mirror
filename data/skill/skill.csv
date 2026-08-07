@@ -4565,7 +4565,7 @@
 ,,,,,,,,total_damage_B,20,,,,,,,
 ,,,,,,,,total_damage_B.conditionValue,$skill.id.startsWith('0-6-'),,,,,,,
 ,,,,,,,,condition,僅限武士技能,,,,,,,
-,,,,,,,,unsheathe_attack_multiplier,$($STR+$DEX)/51,,,,,,,
+,,,,,,,,unsheathe_attack_multiplier,($STR+$DEX)/51,,,,,,,
 ,,,,,,2,extra,caption,受到的所有傷害減輕${5*stack}%。,,,,,,,
 ,,,,,,-,list,text,此技能與無影斬結合使用，可發動進化技能天地無雙斬，詳情見無影斬之頁面。,,,,,,,
 ,,,,,,,,skill,無影斬,,,,,,,

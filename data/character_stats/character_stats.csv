@@ -368,8 +368,9 @@ reduce_dmg_bowling,貼地傷害減輕,%,reduce_dmg_bowling,,,,變數值為0時,�
 reduce_dmg_bullet,子彈傷害減輕,%,reduce_dmg_bullet,,,,變數值為0時,子彈傷害：向我方角色射出球狀投射物之技能，警告範圍為藍色。
 reduce_dmg_floor,地面傷害減輕,%,reduce_dmg_floor,,,,變數值為0時,地面傷害：放置於地面上的固定傷害領域，表現形式為地刺，警告範圍為藍色。
 reduce_dmg_meteor,隕石傷害減輕,%,reduce_dmg_meteor,,,,變數值為0時,隕石傷害：自空中落下之技能，表現形式為隕石，警告範圍為藍色。
-reduce_dmg_explosion,爆炸傷害減輕,%,reduce_dmg_explosion,,,,變數值為0時,爆炸傷害：警告範圍為藍色
-reduce_dmg_gravity,吸引傷害減輕,%,reduce_dmg_gravity,,,,變數值為0時,吸引傷害：會對範圍內造成持續傷害並把玩家向技能中心拉入的攻擊，表現形式為暴風、漩渦，警告範圍為藍色。
+reduce_explosion,爆炸減輕,%,reduce_explosion,,,,變數值為0時,爆炸傷害：警告範圍為藍色
+reduce_gravity,吸引減輕,%,reduce_gravity,,,,變數值為0時,吸引傷害：會對範圍內造成持續傷害並把玩家向技能中心拉入的攻擊，表現形式為暴風、漩渦，警告範圍為藍色。
+reduce_emission,放射減輕,%,reduce_emission,,,,變數值為0時,
 ,,,,,,,,
 atk_up_str,ATK提升 (STR),,atk_up_str,,#cvalue*@str/100,,永久,
 atk_up_dex,ATK提升 (DEX),,atk_up_dex,,#cvalue*@dex/100,,永久,
