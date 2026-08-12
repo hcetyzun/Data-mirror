@@ -54,6 +54,9 @@ jobs:
           # ---------- Quest ----------
           curl -L 'https://docs.google.com/spreadsheets/d/1hh66cAWlDk2uJlAbv2ivdrRNQYuK4RPuWF4iB48T31g/pub?gid=1111992028&single=true&output=csv&range=A:I' -o data/quest/quest.csv
 
+          # ---------- EquipmentTrait----------
+          curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=1482085643&single=true&output=csv&range=A:F' -o data/EquipmentTrait/EquipmentTrait.csv
+
           # ---------- Lang - EN ----------
           curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=170573319&single=true&output=csv&range=R:R' -o data/lang/en/skill_en.csv
           curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=2033454381&single=true&output=csv&range=F:F' -o data/lang/en/skillmain_en.csv
