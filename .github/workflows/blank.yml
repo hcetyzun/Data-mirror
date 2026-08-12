@@ -19,7 +19,7 @@ jobs:
       - name: Fetch CSVs
         run: |
           # 创建所有目录
-          mkdir -p data/skill data/skill_main data/stats data/character_stats data/glossary data/equipment data/crystal data/enchant data/registlet data/potion data/quest data/lang/en data/lang/ja data/lang/zh_cn data/lang/zh_tw
+          mkdir -p data/skill data/skill_main data/stats data/character_stats data/glossary data/equipment data/crystal data/enchant data/registlet data/potion data/quest data/EquipmentTrait data/lang/en data/lang/ja data/lang/zh_cn data/lang/zh_tw
 
           # ---------- Skill ----------
           curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_XhF85gZ5sd9AtOMSM6JY4OuQwFlD6kToQynQ4bMq_fiaUNr26c7dbrIs6WeWnscKe1rau1npWYe7/pub?gid=170573319&single=true&output=csv&range=A:Q' -o data/skill/skill.csv
