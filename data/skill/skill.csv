@@ -2563,7 +2563,7 @@
 ,,,,,,,,multiplier,100+15*SLv,,,,,,,
 ,,,,,,3,,,,,,,,,,
 ,,,,,,4,,,,,,,,,,
-4,戰車猛擊,預設,拳套,拳套,,-,proration,damage,physical,,500,12,瞬發,可以放入連擊,,
+4,戰車猛擊,預設,拳套,拳套,,-,proration,damage,physical,,500,12,須蓄力,可以放入連擊,,10-Math.floor(SLv/2)*2
 ,,,,,,1,damage,constant,300+20*SLv,,,,,,,
 ,,,,,,,,multiplier,1240+SLv+$BAGI,,,,,,,
 ,,,,,,,,type,AOE,,,,,,,
@@ -2576,7 +2576,7 @@
 ,,,,,,,,range_damage,1,,,,,,,
 ,,,,,,-,list,text,此技能對BOSS的#[畏懼]機率減半。,,,,,,,
 ,,,,,,2,,,,,,,,,,
-4,,非預設,,,,1,,constant,50+20*SLv,,,,須蓄力,,,11-SLv
+4,,非預設,,,,1,,constant,50+20*SLv,,,,須蓄力,,,11-Math.floor(SLv/2)*2
 ,,,,,,,,multiplier,990+SLv,,,,,,,
 ,,,,,,,,type,single,,,,,,,
 ,,,,,,,,effective_area,,,,,,,,
