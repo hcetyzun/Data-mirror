@@ -15,7 +15,7 @@
 13,迴避,5,,dodge,Lv*3
 14,ASPD,5,,aspd,Lv*50
 15,CSPD,5,,cspd,Lv*50
-16,暴擊率,5,,critical,Lv
+16,暴擊率,5,,critical_rate,Lv
 17,暴擊傷害,5,,critical_damage,Lv
 18,HP自然回復,5,,natural_hp_regen,Lv*15
 19,MP自然回復,5,,natural_mp_regen,Lv*5
@@ -45,7 +45,7 @@
 ,,,stack,,30
 5,暴擊,5,,,"對敵人造成傷害時，3秒內，暴擊率增加${$stat.critical_rate}。
 CRT值越高，持續時間越久，最多可累積${$stack.max}層。"
-,,,stat,critical_rate,Lv*1
+,,,stat,critical_rate,1
 ,,,stack,,10*Lv
 6,工程強化,5,,,"對敵人造成傷害時，20秒內，ATK與MATK增加${$stat.atk}，CSPD增加${$stat.cspd}。
 TEC值越高，增加量越多，每10秒發動一次。"
@@ -70,13 +70,13 @@ TEC值越高，增加量越多，每10秒發動一次。"
 ,,,stat,magic_pierce,1
 ,,,stack,,10
 11,血之刃,5,,,"對敵人造成傷害時，HP回復${Lv*200+STR}。
-STR值越高，回復量越多，每3秒發動一次。"
+STR值越高，回復量越多，每3秒可以發動一次。"
 12,血能術,5,,,"對敵人造成傷害時，HP回復${Lv*200+INT}。
-INT值越高，回復量越多，每3秒發動一次。"
+INT值越高，回復量越多，每3秒可以發動一次。"
 13,靈魂射擊,5,,,"對敵人造成傷害時，MP回復${Lv*2+DEX/(90-15*Lv)}。
-DEX值越高，回復量越多，每6秒發動一次。"
+DEX值越高，回復量越多，每6秒可以發動一次。"
 14,靈魂打擊,5,,,"對敵人造成傷害時，MP回復${Lv*2+AGI/(90-15*Lv)}。
-AGI值越高，回復量越多，每6秒發動一次。"
+AGI值越高，回復量越多，每6秒可以發動一次。"
 15,幸運經驗,5,,,"對敵人造成傷害時，77秒內，獲得EXP增加${$stat.exp_rate}%。
 LUK值越高，最大累積層數越多，最多可累積${$stack.max}層。"
 ,,,stat,exp_rate,Lv*1
@@ -86,7 +86,7 @@ MEN值越高，增加量越多，最多可累積${$stack.max}層。"
 ,,,stat,physical_barrier,2*Lv
 ,,,,magical_barrier,2*Lv
 ,,,stack,,100
-17,詛咒武裝,5,,,"對敵人造成傷害時，3秒內，HP上限減少${$stat.m.max_hp}，但同時ATK與MATK增加${$stat.atk}。
+17,詛咒武裝,5,,,"對敵人造成傷害時，3秒內，HP上限減少${$stat.m.max_hp}%，但同時ATK與MATK增加${$stat.atk}。
 最多可累積${$stack.max}層。"
 ,,,stat,max_hp%,-1
 ,,,,atk,Lv
@@ -108,7 +108,7 @@ MEN值越高，增加量越多，最多可累積${$stack.max}層。"
 最多可疊加${$stack.max}層。"
 ,,,stat,accuracy,Lv*20
 ,,,stack,,5
-22,擦擊魔源推進器,5,,,"當對目標命中判定為Graze時，15秒內，MP上限減少${$stat.max_mp}，但同時近戰威力與遠距離威力提升${$stat.long_range_damage}%，命中增加${$stat.accuracy}。
+22,擦擊魔源推進器,5,,,"當對目標命中判定為Graze時，15秒內，MP上限減少${-$stat.max_mp}，但同時近戰威力與遠距離威力提升${$stat.long_range_damage}%，命中增加${$stat.accuracy}。
 最多可累積${$stack.max}層。"
 ,,,stat,max_mp,-(350-50*Lv)
 ,,,,short_range_damage,1
@@ -129,7 +129,7 @@ MEN值越高，增加量越多，最多可累積${$stack.max}層。"
 ,,,stack,,5
 26,重振魔源,5,,,"當對目標命中判定為MISS時，MP回復100。
 發動力${Lv*10}（Lv4為50，Lv5為100）。"
-27,重振巨力,5,,,當對目標命中判定為MISS時，90秒內，ATK增加${$stat.atk}，暴擊率增加${$stat.critical_rate}，命中減少9999。
+27,重振巨力,5,,,當對目標命中判定為MISS時，90秒內，ATK增加${$stat.atk}，暴擊率增加${$stat.critical_rate}，命中減少${-$stat.accuracy}。
 ,,,stat,atk,Lv*100
 ,,,,critical_rate,25+25*Lv
 ,,,,accuracy,-9999
@@ -147,14 +147,14 @@ DEX值越高，增加量越多，每20秒發動一次。"
 ,,,stat,guard_break,Lv*5
 33,格擋治癒,5,,,"被目標Guard時，HP回復${500+500*Lv}。
 STR值越高，回復量越多，每6秒發動一次。"
-34,復仇力量,5,,,"受到敵人的傷害時，30秒內，ATK增加10（Lv1）、15（Lv2）、${$stat.atk}（Lv3-5）。
-最多可累積90層（Lv1）、60層（Lv2）、${$stack.max}層（Lv3-5）。"
-,,,stat,atk,30*(Lv-2)
-,,,stack,,30/(Lv-2)
-35,復仇魔力,5,,,"受到敵人的傷害時，30秒內，MATK增加10（Lv1）、15（Lv2）、${$stat.matk}（Lv3-5）。
-最多可累積90層（Lv1）、60層（Lv2）、${$stack.max}層（Lv3-5）。"
-,,,stat,matk,30*(Lv-2)
-,,,stack,,30/(Lv-2)
+34,復仇力量,5,,,"受到敵人的傷害時，30秒內，ATK增加10/15/30/60/90(Lv.1~Lv.5)。
+最多可累積90/60/30/15/10層。"
+,,,stat,atk,"[10, 15, 30, 60, 90][Lv-1]"
+,,,stack,,"[90, 60, 30, 15, 10][Lv-1]"
+35,復仇魔力,5,,,"受到敵人的傷害時，30秒內，MATK增加10/15/30/60/90(Lv.1~Lv.5)。
+最多可累積90/60/30/15/10層。"
+,,,stat,matk,"[10, 15, 30, 60, 90][Lv-1]"
+,,,stack,,"[90, 60, 30, 15, 10][Lv-1]"
 36,反擊速度,5,,,受到敵人的傷害時，3秒內，ASPD、CSPD以及行動速度增加${$stat.aspd}%。
 ,,,stat,aspd,Lv*2
 ,,,,cspd,Lv*2
@@ -169,16 +169,15 @@ STR值越高，回復量越多，每6秒發動一次。"
 最多可累積${$stack.max}層。"
 ,,,stat,max_mp,5*2^(Lv-1)
 ,,,stack,,35-5*Lv
-40,復仇武士,5,,,"受到敵人的傷害時，9秒內，拔刀威力增加${$stat.unsheathe_attack}。
+40,復仇武士,5,,,"受到敵人的傷害時，9秒內，拔刀攻擊增加${$stat.unsheathe_attack}。
 最多可累積${$stack.max}層。"
 ,,,stat,unsheathe_attack,100
 ,,,stack,,Lv*1
-41,生命清除,5,,,"受到敵人的傷害時，20秒內，HP上限減少${$stat.m.max_hp}，但同時ASPD增加${$stat.aspd}。
+41,生命清除,5,,,"受到敵人的傷害時，20秒內，HP上限減少${-$stat.m.max_hp}%，但同時ASPD增加${$stat.aspd}。
 最多可累積${$stack.max}層。"
 ,,,stat,max_hp%,-2^(Lv-1)
 ,,,,aspd,50*2^(Lv-1)
 ,,,stack,,5
-,,,remark,,此處相當於附魔-HP上限%。
 42,魔源轉換,5,,,"受到敵人的傷害時，MP回復${Lv*1}。
 VIT值越高，回復量越多。"
 43,機率的光輝,9,,,特性轉移的成功率提升${Lv*10}%。
