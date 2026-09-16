@@ -6454,7 +6454,7 @@
 ,,,,,,,,multiplier,750+25*SLv,,,,,,,
 ,,,,,,,,range_damage,1,,,,,,,
 ,,,,,,,,action_frame,66~37,,,,,,,
-,,,,,,-,extra,condition,此技能移動期間,,,,,,,
+,,,,,,-,extra,condition,此技能空中移動期間,,,,,,,
 ,,,,,,,,caption,傷害減輕${10*SLv}%,,,,,,,
 ,,,,,,-,extra,condition,成功減少該次傷害時,,,,,,,
 ,,,,,,,,caption,自該次傷害起獲得 #[無敵] 2秒,,,,,,,
