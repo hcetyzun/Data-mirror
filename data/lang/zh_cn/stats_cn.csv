@@ -21,6 +21,7 @@ MATK,
 武器攻击距离,$t$s$1dm
 物理贯穿,
 魔法贯穿,
+DEF忽略,
 DEF,
 MDEF,
 稳定率,
@@ -82,7 +83,7 @@ MDEF,
 封印昏厥,$t
 反作用伤害,$t$s$2d$u
 获得EXP,
-火属性,
+火属性,$t
 水属性,$t
 地属性,$t
 风属性,$t
@@ -117,7 +118,7 @@ ATK下降 (DEX),ATK下降(DEX$v%)
 ATK下降 (INT),ATK下降(INT$v%)
 ATK下降 (AGI),ATK下降(AGI$v%)
 ATK下降 (VIT),ATK下降(VIT$v%)
-MATK下降 (STR),MATK下降(STR$v%)
+MATK下降 (STR),
 MATK下降 (DEX),
 MATK下降 (INT),
 MATK下降 (AGI),
@@ -138,6 +139,5 @@ MATK下降 (VIT),
 异常闪躲,
 阻挡性能基础值,
 阻挡回复基础值,
-闪躲回复基础值,
 ,
-双重提供技能效率,
+#VALUE!,

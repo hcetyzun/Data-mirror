@@ -954,14 +954,10 @@ Quick Draw
 
 
 Create a decoy up to 2m in front of the character.
-decoy
 
 
 
-
-"The decoy couldn't move,  it will only attack if the target is within its range. The Decoy and the character would gain Charging state since the second attack. Also, if the decoy was hit by monster's AoE, it would stop attacking for 1 second. (If your main weapon is bow or bowgun, then this rule is invalid.)"
-"Decoy Attack, Charging, decoy"
-
+"The decoy couldn't move,  it will only launch ![Decoy Attack] if the target is within its range. The Decoy and the character would gain ![Charging] state since the second attack. Also, if the decoy was hit by monster's AoE, it would stop attacking for 1 second. (If your main weapon is bow or bowgun, then this rule is invalid.)"
 
 
 Decoy Attack
@@ -974,85 +970,27 @@ Charging
 
 
 "After activated, and before the character carry out a normal attack"
-
 "Charging's AMPR addition is based on basic AMPR. Skill effects, equipments or medicines won't count."
-Charging
 "Under Charging state, the character's first normal attack would keep the Charging effect, but both the character and the decoy's Charging state would be removed. That is, the decoy must attack again so that you can gain the charging state again."
-Charging
 Supplementary explanation of Decoy Shot: 
 
 
-"The decoy's attack movement and range is fixed, same as the player while casting. It won't be affected if you changed your weapon after that. Decoy's attack range isn't affected by Power Wave."
-Power Wave
-while casting
-"The decoy's ASPD, cirtical rate and aggro is fixed, same as the player's stat while casting."
-while casting
+"The decoy's attack movement and range is fixed, same as ![the player while casting]. It won't be affected if you changed your weapon after that. Decoy's attack range isn't affected by ![Power Wave]."
+"The decoy's ASPD, cirtical rate and aggro is fixed, same as ![the player's stat while casting]."
 "The decoy's ATK, AMPR and stability synchronizes with current character stat."
-current character stat
 Decoy Attack's damage would be affected by the combo effect.
-Decoy Attack
-
 
 "Decoy Attack restores MP depended on AMPR, generates aggro, activates #[Venom]'s HP lost, but it does not affect proration."
-Decoy Attack
 "While equipping dual sword, the decoy gains double AMPR too. But its ATK is only affected by main hand ATK."
 "When this skill is cast, if the character has the buff of ""Critical Rate Increase in Next Skill"", such as Meikyo Shisui and Punish Ray, this effect will increase the crit rate of the Decoy attack, even if the status disappears."
-"Meikyo Shisui, Punish Ray"
-Decoy attack
 "While the decoy exists, natural HP and MP regen won't activate even if the character isn't under battle mode."
 "The activation of Charging state is associated with seif ASPD and skill level. For more detailed imformations, please check out the URL."
-Charging
 
 Testing the association between AMPR and decoy
 
 
 
 This skill has a higher crit rate but lower accuracy.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

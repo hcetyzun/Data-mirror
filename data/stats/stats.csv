@@ -21,6 +21,7 @@ weapon_base_atk,武器基礎ATK,,1,4,1
 weapon_range,武器攻擊距離,$t$s$1dm,無,1,
 physical_pierce,物理貫穿,,無,4,
 magic_pierce,魔法貫穿,,無,4,
+def_ignore,DEF忽略,,無,4,1
 def,DEF,,1,4,
 mdef,MDEF,,1,4,
 stability,穩定率,,無,4,
