@@ -1530,7 +1530,6 @@ This skill has a higher crit rate but lower accuracy.
 
 
 
-
 Base on skill element
 
 
@@ -1624,7 +1623,6 @@ Gains buff: Mana Adjust after casting.
 Mana Adjust
 Mana Adjust
 #[MP cost halves].
-
 
 
 Tumble chance: ${(SLv*7)*0.1}%; damage decreases to ${SLv*10}% 
@@ -3930,16 +3928,6 @@ Grand Buster Lance
 Recover the stack of punishments to 3.
 punishments
 Grand Buster Lance does magical proration.
-
-
-
-
-
-
-
-
-
-
 
 
 

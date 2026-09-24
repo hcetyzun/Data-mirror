@@ -125,7 +125,7 @@ matk_down_agi,MATK下降 (AGI),MATK下降(AGI$v%),無,5,
 matk_down_vit,MATK下降 (VIT),MATK下降(VIT$v%),無,5,
 invincible_aid_sec,無敵急救 (s),無敵急救 ($vs),無,10,
 pet_exp,寵物獲得EXP,,無,10,
-item_cooldown,道具冷卻,$t-$1d秒::$t+$1d秒,無,10,
+item_cooldown,道具冷卻,$t$1-d秒::$t+$1-d秒,無,10,
 skill_constant_extra,技能常數,$t$s$v,無,11,1
 magic_crt_percentage,法術暴擊轉化率,$t$v$u,無,11,
 magic_cd_percentage,法術暴傷轉化率,$t$v$u,無,11,
