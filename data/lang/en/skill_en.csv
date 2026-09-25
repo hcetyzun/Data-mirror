@@ -615,7 +615,7 @@ The charge time is not affected by CSPD.
 
 Second hit
 
-Third hit
+
 
 
 
@@ -2015,6 +2015,7 @@ Knock Back
 
 
 Damage of this skill wouldn't be affected by the combo effect.
+
 
 
 
@@ -4281,30 +4282,7 @@ Grand Buster Lance does magical proration.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Give enemy two damage in one unsheathe. Two damage is judged respectively.
-
 
 Unsheathing
 
@@ -4318,7 +4296,6 @@ Sheathing
 
 
 
-This skill is affected by unsheathed attack.
 
 Shoot three waves and deal three dmage. Each damage is judged respectively.
 
@@ -4340,7 +4317,6 @@ Third Hit
 
 
 "If the distance to the target is over ((normal attack range))m when cast, the skill would be affected by Pulse Weakening ."
-Pulse Weakening
 
 
 
@@ -4357,9 +4333,6 @@ Every hit
 
 
 
-This skill is considered as unsheathed attack.
-
-
 Looming Blade
 
 
@@ -4373,7 +4346,6 @@ Looming Blade
 Looming Blade
 
 "After using any skill, even if it isn't an attack skill, this buff will disappear."
-This skill is considered as unsheathed attack.
 
 
 
@@ -4387,6 +4359,7 @@ First hit
 
 
 
+This skill is #[Perfect Aim].
 
 
 
@@ -4483,6 +4456,7 @@ NOT
 Damage reduction
 
 
+
 All type of damage are reduced by ${5*stack}%.
 
 
@@ -4513,7 +4487,6 @@ Tenryu
 Tenryu
 This skill's MP cost declines to ![100].
 
-Tenryu Stack
 
 Normal Attack's cooldown time is declined to 0.
 While not under #[Paralysis] ailment
@@ -4557,7 +4530,6 @@ After successfully casting
 "Tenryu Ransei．Zannou wouldn't add Tenryu stack., the minimum stack while you cast  Tenryu Ransei．Zannou is 0."
 "Tenryu Ransei．Zannou, Tenryu"
 Tenryu Ransei．Zannou would not cause #[Armor Break] even if you use Zantei Settetsu to activate it.
-"Zantei Settetsu, Tenryu Ransei．Zannou"
 This skill is considered as  unsheathed attack.
 
 
@@ -4794,8 +4766,6 @@ Accuracy increase
 Next skill also get accuracy bonus.
 
 This skill is considered as unsheathed attack.
-
-
 
 
 
@@ -5334,19 +5304,7 @@ This skill is considered as unsheathed attack.
 
 
 
-
-
-
 #[Perfect Aim].
-
-
-
-
-
-
-
-
-
 
 
 
