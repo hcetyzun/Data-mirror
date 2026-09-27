@@ -44,6 +44,7 @@ short_range_damage,近距離威力,,無,5,
 long_range_damage,遠距離威力,,無,5,
 total_damage_A,總傷害,,無,11,dev
 total_damage_B,最終傷害,,無,11,dev
+total_damage_C,傷害加成,,無,11,dev
 ailment_resistance,異常抗性,,無,5,
 guard_rate,阻擋率,,無,5,1
 guard_regenerate,阻擋回復,,無,5,

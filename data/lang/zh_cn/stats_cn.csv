@@ -44,6 +44,7 @@ MDEF,
 远距离威力,
 总伤害,
 最终伤害,
+伤害加成,
 异常抗性,
 阻挡率,
 阻挡回复,
@@ -81,7 +82,7 @@ MDEF,
 封印胆怯,$t
 封印翻覆,$t
 封印昏厥,$t
-反作用伤害,$t$s$2d$u
+反作用伤害,
 获得EXP,
 火属性,$t
 水属性,$t
@@ -117,7 +118,7 @@ ATK下降 (STR),ATK下降(STR$v%)
 ATK下降 (DEX),ATK下降(DEX$v%)
 ATK下降 (INT),ATK下降(INT$v%)
 ATK下降 (AGI),ATK下降(AGI$v%)
-ATK下降 (VIT),ATK下降(VIT$v%)
+ATK下降 (VIT),
 MATK下降 (STR),
 MATK下降 (DEX),
 MATK下降 (INT),
@@ -138,6 +139,5 @@ MATK下降 (VIT),
 法术额外属性伤害,
 异常闪躲,
 阻挡性能基础值,
-阻挡回复基础值,
 ,
-#VALUE!,
+闪躲回复基础值,
