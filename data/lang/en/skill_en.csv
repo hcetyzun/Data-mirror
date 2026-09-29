@@ -1478,58 +1478,6 @@ This skill has a higher crit rate but lower accuracy.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Base on skill element
 
 
@@ -7761,6 +7709,7 @@ Normal attack damage increased by ${(5+Math.floor(1.5*SLv))*stack}%.
 
 
 #[Perfect Aim].
+
 
 
 
