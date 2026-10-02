@@ -372,7 +372,8 @@ Skill is not affect by motion speed if used by Two-Handed Sword.
 
 Change effect on target of ailment #[Bleed]
 Change effect on target of ailment #[Bleed]
-"Upon level cap 250's release, dual swords can now use this skill.<br>Change effect on target of ailment #[Bleed]"
+"Upon level cap 250's release, dual swords can now use this skill.
+Change effect on target of ailment #[Bleed]."
 "Slash your target upwards with Lunar Slash, and additional attack with Magic Blade"
 
 "Lunar Slash, Magic Blade"
@@ -8122,8 +8123,6 @@ Familia need to cast to release skill. Casting time is about 3 sec. It is not af
 
 
 Familia need to cast to release skill. Casting time is about 4 sec. It is not affected by CSPD.
-
-
 
 
 
