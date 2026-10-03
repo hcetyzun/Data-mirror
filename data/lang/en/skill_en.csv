@@ -5,7 +5,23 @@
 
 
 
+
+
+
+
+
 Flinch
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -39,6 +55,10 @@ Motion Speed Boost
 Motion time decreases by 50%
 
 ![Motion Speed Boost] overrides any other Motion Speed effects.
+
+
+
+
 
 
 
@@ -92,6 +112,11 @@ Only Mainhand ATK will be multiplied when using dual swords
 
 
 "Change attack action and single damage is split into 4 slashes. (Only the first hit will be split into 4, so a total of 6~7 hits for dual swords)"
+
+
+
+
+
 "Using whole body's strength jump into the sky, and cast Meteor Smash to the target. While landing on the floor casts Meteor Burst , dealing area damage."
 
 
@@ -111,6 +136,11 @@ Meteor Burst
 player is under #[Invincible] state.
 While in the air
 "Meteor Burst's center is the target's position while casting, so it may not deal damage if the target moved. "
+
+
+
+
+
 
 
 
@@ -171,6 +201,12 @@ Casting Supersonic Blade also gains buff: Charged Blade.
 
 
 
+
+
+
+
+
+
 Critical damage bonus is at least ![1] and at most ![10].
 
 
@@ -181,6 +217,11 @@ Critical damage bonus is at least ![1] and at most ![5].
 
 
 Critical damage bonus is at least ![1] and at most ![5].
+
+
+
+
+
 
 
 "Shoots a Blade Wind at the target. The Blade Wind disappears after dealing damage, and creates a Tempest at the target's position."
@@ -208,6 +249,11 @@ Tempest
 
 
 The center of the Tempest is the place where Blade Wind hits the target.
+
+
+
+
+
 
 
 
@@ -271,8 +317,15 @@ Base VIT
 
 
 
+
+
+
 Increase damage for all attack skills in Blade Skills
 All Blade Skills
+
+
+
+
 
 
 
@@ -288,6 +341,10 @@ after casting
 Knight's Stance
 "The overriding rule of War Cry within teammates: The higher skill lv one overrides the lower skill lv; if the skill lv is same, then longer sustaining time overrides shorter sustaining time."
 War Cry
+
+
+
+
 
 
 
@@ -326,13 +383,24 @@ Normal Attack Boost
 
 
 
+
+
+
+
+
 When skill Lv10
 next skill #[MP cost halves].
+
 
 
 Tumble
 
 2020/10/22 Skill adjustment: Dual sword can use this skill.
+
+
+
+
+
 "Shutout to your target. If target is afflicted by #[Flinch]/#[Tumble]/#[Stun], and not #[Bleed], Shutout will be changed to Perfect Game"
 
 "Shutout, Perfect Game"
@@ -361,6 +429,7 @@ Perfect Game
 
 
 
+
 Skill is not affect by motion speed if used by Two-Handed Sword.
 
 
@@ -374,6 +443,11 @@ Change effect on target of ailment #[Bleed]
 Change effect on target of ailment #[Bleed]
 "Upon level cap 250's release, dual swords can now use this skill.
 Change effect on target of ailment #[Bleed]."
+
+
+
+
+
 "Slash your target upwards with Lunar Slash, and additional attack with Magic Blade"
 
 "Lunar Slash, Magic Blade"
@@ -412,6 +486,11 @@ Magic Blade(Additional Attack)
 "Crit chance of this damage is ((${10*SLv}+Character CRT))%, not affected by armour or any other buffs(but is affected by mob's crit resistance)."
 This damage is not affected by combo effects
 "(Only applies to 2-Handed Swords)Gain Magic Blade stacks after casting, The stacks will be used to performed Magic Blade(Additional Attack) when other attack skills hit any enemies"
+
+
+
+
+
 "Slash your surroundings with Aura Blade, and gain Aura buff"
 
 "Aura Blade, Aura"
@@ -451,6 +530,10 @@ Until the next skill
 Next skill
 
 "If any skills is casted, even if it is not attack skills, Aura will end"
+
+
+
+
 
 
 
@@ -594,6 +677,35 @@ When buff ends
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Tumble
 
 
@@ -601,6 +713,11 @@ Tumble
 While target is under #[Slow] ailment
 
 The charge time is not affected by CSPD.
+
+
+
+
+
 
 
 "Shoot the target three times, and the physical pierce of each hit will be higher and higher."
@@ -615,6 +732,11 @@ The charge time is not affected by CSPD.
 
 
 Second hit
+
+
+
+
+
 
 
 
@@ -639,7 +761,16 @@ The charge time is not affected by CSPD.
 
 
 
+
 Adds effect: The stability of this skill is increased.
+
+
+
+
+
+
+
+
 
 
 
@@ -755,6 +886,10 @@ Decoy Shot
 
 
 
+
+
+
+
 "Shoots a Moeba Shot at the target. If this attack can successfully cause an ailment to the target, the skill damage will be enhanced."
 
 Moeba Shot
@@ -787,6 +922,10 @@ While arrow's element causes more damage
 "Added effect of ""Enhanced damage when ailment inflicted"""
 "Added effect of ""Enhanced damage when ailment inflicted"""
 
+
+
+
+
 "Shoots a Paralysis Shot at the target, and increase your stability after a successful hit. If this attack can successfully cause an ailment to the target, the skill damage will be enhanced."
 
 Paralysis Shot
@@ -808,6 +947,10 @@ Paralysis Shot
 
 
 Paralysis Shot (Enhanced)
+
+
+
+
 
 
 
@@ -880,6 +1023,10 @@ hit
 
 
 
+
+
+
+
 "Shoots a Arm Break at the target. If this attack can successfully cause an ailment to the target, the skill damage will be enhanced."
 
 Arm Break
@@ -924,6 +1071,10 @@ Arm Break (Enhanced)
 
 
 
+
+
+
+
 The following ${SLv} attacks won't generate aggro.
 
 Attack: including normal attack or any attack skill.
@@ -931,7 +1082,9 @@ Decoy attack will not consume the number of Sneak.
 Decoy attack
 "Cannot eliminate any non-attack skill's aggro, such as healing, support or auras."
 The following ${SLv} attacks won't generate aggro.
+
 The following ${SLv} attacks won't generate aggro.
+
 
 Skills which have a maximum cast range of 8m or higher
 
@@ -940,6 +1093,7 @@ Skills which have a maximum cast range of 8m or higher
 
 Some settling skills would not get buffed.
 Cross Fire
+
 "While casting skill that consumes MP, there is ${2.5*SLv}%  chance restores 100 MP."
 
 "Only ""aimimg demanded"" skills can activate Quick Draw."
@@ -952,6 +1106,12 @@ Quick Draw
 Quick Draw
 "If the MP cost is settled zero due to the combo set, or the skill's cost is zero originally, then it would not activate Quick Draw."
 Quick Draw
+
+
+
+
+
+
 
 
 Create a decoy up to 2m in front of the character.
@@ -991,7 +1151,54 @@ Testing the association between AMPR and decoy
 
 
 
+
+
+
+
+
 This skill has a higher crit rate but lower accuracy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1518,7 +1725,19 @@ Element | Skill Name | Ailment
 
 
 
+
+
+
+
+
+
 Stop
+
+
+
+
+
+
 
 
 
@@ -1577,6 +1796,12 @@ Mana Adjust
 Tumble chance: ${(SLv*7)*0.1}%; damage decreases to ${SLv*10}% 
 
 Tumble chance: ${(SLv*7)*0.1}%; damage decreases to ${SLv*10}% 
+
+
+
+
+
+
 "After casting, deal damage to the target by a 3 hit AoE after 0.5 second delay. Damage declines per hit, while the effect area expands at the same time."
 
 
@@ -1610,6 +1835,11 @@ The casting time is not affected by CSPD.
 Generates ![100] aggro to the target per second  while casting. This aggro is not affected by aggro% stat.
 CSPD affects additional aggro's amount. The reduction is calculated in the same way as the casting time.
 "It means that for the part with CSPD≦1000, every 20 CSPD will reduce aggro by 1%. And for the part with CSPD>1000, every 180 CSPD will reduce aggro by 1%."
+
+
+
+
+
 
 
 
@@ -1708,6 +1938,11 @@ Knock Back
 
 
 
+
+
+
+
+
 Based on skill element
 
 
@@ -1743,7 +1978,17 @@ Dark | Evil Blast |＃Fear
 
 
 
+
+
+
+
+
 The monsters would be pulled to the middle of the storm while they get hit by the storm first time.
+
+
+
+
+
 
 
 
@@ -1833,8 +2078,17 @@ Gains #[Invincible] buff in a short time after casting.
 
 
 
+
+
+
+
+
+
 "This skill 's casting time could be affected by CSPD, at most 1 second."
 The casting time won't be lengthen if the CSPD is negative.
+
+
+
 
 
 
@@ -1854,6 +2108,7 @@ Skill needs casting time:
 casting time decreases by ${SLv*5}%.
 Skill which don't need casting time: 
 action time decreases by ${SLv*5}%.
+
 
 
 
@@ -1919,6 +2174,11 @@ Magic Wave's range: ${(Math.floor(SLv/2)+5)}m
 
 
 
+
+
+
+
+
 Casting time decreases ${stack} second.
 casting after MP Charge
 MP Charge
@@ -1930,6 +2190,9 @@ MP Charge level
 
 
 The casting time is not affected by CSPD.
+
+
+
 
 
 
@@ -2379,7 +2642,50 @@ Damage of this skill wouldn't be affected by the combo effect.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Flinch
+
+
+
+
+
+
 
 
 
@@ -2400,6 +2706,12 @@ Stun
 
 
 
+
+
+
+
+
+
 Armor Break
 
 
@@ -2410,6 +2722,11 @@ Armor Break
 
 
 "The part ""targetdef*2-target level*2"" in the formula has a limited range : -100 ~ 500."
+
+
+
+
+
 
 
 
@@ -2452,10 +2769,18 @@ Absolute crit
 
 
 
+
+
+
+
+
+
 Fear
 
 
 Ailment (#[Fear]) chance is halved on Boss.
+
+
 
 
 
@@ -2470,7 +2795,18 @@ The charge time is not affected by CSPD.
 
 
 
+
+
+
+
+
 Tumble
+
+
+
+
+
+
 
 
 
@@ -2501,7 +2837,17 @@ Recovers 1000 HP at most per hit.
 
 
 
+
 Recovers 500 HP at most per hit.
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2542,7 +2888,14 @@ Blast
 
 
 
+
+
+
 All Martial Skill
+
+
+
+
 
 
 
@@ -2566,6 +2919,7 @@ Any injuries suffered While under the state
 restore 50MP.
 ${10+2*SLv}% of damage is relieved. 
 
+
 There is a ${SLv*5}% chance to activate Additional Hit while using normal attack.
 Additional Hit
 
@@ -2577,6 +2931,7 @@ Additional Hit
 "Additional Hit's damage won't be affected by Martial Disciple, range damage, and unsheathe attack buff."
 Martial Disciple
 Additional Hit won't crit.
+
 
 
 
@@ -2708,7 +3063,36 @@ Aggravate
 
 
 
+
+
+
+
+
+
+
+
 Adds ${SLv}% chance to make the target #[Armor Break] for ![5] second.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2860,6 +3244,16 @@ Dual Sword Control
 
 
 
+
+
+
+
+
+
+
+
+
+
 "Cast a Spin Slash and knock back the enemy, then generate a Whirlwind lasting for a few second in situ. The Whirlwind deals damage to every passing enemy."
 "Spin Slash, Whirlwind"
 
@@ -2904,6 +3298,11 @@ Ailment infliction judgement is activated each time the Whirlwind causes damage.
 
 
 
+
+
+
+
+
 Freeze
 
 
@@ -2925,6 +3324,10 @@ Action time: about 3~4 sec
 you can manually cancel Phantom Footwork state by moving.
 Phantom Footwork
 "When you have Phantom Footwork buff, this skill damage can affect by range damage. However, it will invalid if you manually cancel the buff."
+
+
+
+
 
 
 
@@ -2980,7 +3383,17 @@ Counterattack Stance
 
 
 
+
+
+
+
+
 Ths skill is considered as unsheathe attack.
+
+
+
+
+
 "Shift behind the back of the target, and gain buff:Focus at the same time."
 
 Focus
@@ -2991,6 +3404,11 @@ Before casting next skill
 
 
 THe next normal attack would be an unsheathe attack if you didn't cast next skill immediately.
+
+
+
+
+
 Cast two Flash to the enemy and deal damage. Gains restoring buff while the Flash hits.
 Flash
 
@@ -3068,6 +3486,14 @@ MaxHP
 
 
 
+
+
+
+
+
+
+
+
 Replace Dodge Counterattack to Double Lightning.
 
 "Dodge Counterattack, Double Lightning"
@@ -3110,6 +3536,11 @@ While sub-hand's element deals more damage
 
 
 
+
+
+
+
+
 Jumps away from the target and attack  while in the air. The next skill would be buffed by Storm Power.
 Storm Power
 
@@ -3138,6 +3569,12 @@ This skill is not affected by short range damage buff.
 
 
 This skill is affected by unsheathe attack and long range damage buff.
+
+
+
+
+
+
 
 
 
@@ -3537,6 +3974,46 @@ Decoy Shot
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 !B[Swipe] at the target and !B[Throw] the halberd out hardly. Piercing all the enemies on its way.
 
 
@@ -3548,6 +4025,10 @@ Swipe
 
 
 Throw
+
+
+
+
 
 
 
@@ -3588,6 +4069,11 @@ This skill can only #[Tumble] non-boss enemy.
 
 
 
+
+
+
+
+
 "Jump up and cast Dragon Dive, left a diving dragon in the ground. The dragon would pump out from the ground after 4 second, causes Earth Impact."
 
 "Dragon Dive, Earth Impact"
@@ -3620,6 +4106,11 @@ Motion speed wouldn't affect this skill.
 
 
 
+
+
+
+
+
 "Jump toward the target ant attack two times, then jump back to the original place."
 
 
@@ -3645,8 +4136,19 @@ The first damage's multiplier is ${SLv*75}%. The second damage 's  multiplier is
 
 
 
+
+
+
+
+
+
 While this skill crits
 next skill's $MP_cost_halves .
+
+
+
+
+
 
 
 
@@ -3678,6 +4180,11 @@ Weakness Thrust
 
 
 "This skill has a reduction in basic critical rate, not final critical rate."
+
+
+
+
+
 
 
 
@@ -3738,6 +4245,12 @@ Repetitive attack
 
 
 
+
+
+
+
+
+
 Deal a damage after casting. The next three skill would be buffed by Punishment.
 
 Punishment
@@ -3773,6 +4286,12 @@ Lasting time: Infinite
 
 
 
+
+
+
+
+
+
 "Consume HP((MaxHP x 10%)) ,and increase aspd yourself. "
 
 
@@ -3781,6 +4300,10 @@ Lasting time: Infinite
 "If you don't have enough HP, you will be left with 1 HP but the effects of the buff will be reduced to the effects of Skill Level 1."
 
 "Consume HP((MaxHP x 15%)) ,and increase aspd yourself. "
+
+
+
+
 "Restore MP after charging. The lower is your current HP, the more it restores."
 
 current HP
@@ -3797,6 +4320,10 @@ After charging
 
 
 the restore amount changes every 15%. Reaches max restore amount while current HP is lower than 54%.
+
+
+
+
 
 Sacrifice defend performance and buff flexebility. The buff is able to stack 3 times at most.
 
@@ -3832,6 +4359,11 @@ Additional description of the light ball
 
 "The three stack's symbolic color is blue, yellow, red from 1 to 3 respectively."
 The magic array below the character during casting has the same color with the balls.
+
+
+
+
+
 
 
 
@@ -4231,6 +4763,35 @@ Grand Buster Lance does magical proration.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Give enemy two damage in one unsheathe. Two damage is judged respectively.
 
 Unsheathing
@@ -4239,6 +4800,11 @@ Unsheathing
 
 
 Sheathing
+
+
+
+
+
 
 
 
@@ -4282,6 +4848,11 @@ Every hit
 
 
 
+
+
+
+
+
 Looming Blade
 
 
@@ -4295,6 +4866,11 @@ Looming Blade
 Looming Blade
 
 "After using any skill, even if it isn't an attack skill, this buff will disappear."
+
+
+
+
+
 
 
 
@@ -4325,6 +4901,11 @@ This skill is #[Perfect Aim].
 "At skill level 1~3, this skill only causes the first hit."
 
 This skill is considered as unsheathed attack.
+
+
+
+
+
 
 
 
@@ -4429,6 +5010,11 @@ Kairiki Ranshin
 
 
 
+
+
+
+
+
 "Gains buff: Tenryu, and attack the target. If you are under Tenryu state, then accumulate Tenryu stack."
 Tenryu
 
@@ -4485,6 +5071,11 @@ This skill is considered as  unsheathed attack.
 
 
 
+
+
+
+
+
 Paralysis
 
 
@@ -4493,6 +5084,14 @@ While the target is under #[Paralysis] ailment
 Stun
 
 "The combo effect #[Mind's Eye] is judged after #[Stun]. That is, if the target os under #[Paralysis] State, Mind's Eye would be activated, cancelling the skill. "
+
+
+
+
+
+
+
+
 
 
 
@@ -4552,6 +5151,8 @@ This skill is considered as unsheathed attack.
 
 
 
+
+
 "After learning this skill, you will cast High-Speed Glide whenever the target are out of your attack distance."
 High-Speed Glide
 
@@ -4590,6 +5191,7 @@ Only the first normal attack before High-Speed Glide ends could be buffed by Aft
 Decoy Shot's attack is also buffed by After Image. Its' attack would not remove After Image.
 Decoy Shot
 After Image
+
 
 Only if you don't equip sub-hand equipment would this skill be effective.
 
@@ -4636,6 +5238,10 @@ This skill does not work when you are barehand.
 
 
 
+
+
+
+
 Meikyo
 
 
@@ -4645,6 +5251,10 @@ The buff would be removed after casting any skill. The skill cancelling this buf
 "If the next skill is Decoy Shot, decoy attack will receive the crit rate bonus. The bonus will still exist even if Meikyo buff disappears."
 Decoy Shot
 "decoy attack, Meikyo"
+
+
+
+
 
 
 
@@ -4667,6 +5277,11 @@ If cast !S[Garyou Tensei] during the buff
 
 
 The buff would be removed after casting Garyou Tensei.
+
+
+
+
+
 
 
 
@@ -4712,6 +5327,16 @@ Accuracy increase
 Next skill also get accuracy bonus.
 
 This skill is considered as unsheathed attack.
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5247,7 +5872,220 @@ This skill is considered as unsheathed attack.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #[Perfect Aim].
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -6334,35 +7172,44 @@ Knock Back
 
 
 
+
+"""Knight Will"" skill lv"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 """Knight Will"" skill lv"
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""Knight Will"" skill lv"
 
 
 
@@ -6396,28 +7243,6 @@ Normal attack damage increased by ${(5+Math.floor(1.5*SLv))*stack}%.
 
 
 
-"""Knight Will"" skill lv"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -6455,6 +7280,43 @@ Normal attack damage increased by ${(5+Math.floor(1.5*SLv))*stack}%.
 
 
 
+"""Knight Will"" skill lv"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -6471,6 +7333,199 @@ Normal attack damage increased by ${(5+Math.floor(1.5*SLv))*stack}%.
 
 
 """Knight Will"" skill lv"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -7933,6 +8988,35 @@ Normal attack damage increased by ${(5+Math.floor(1.5*SLv))*stack}%.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Familia need to cast to release skill. Casting time is about 4~8 sec (depends on skill lv). It is not affected by CSPD.
 
 
@@ -8016,7 +9100,32 @@ Familia need to cast to release skill. Casting time is about 4~8 sec (depends on
 
 
 
+
+
+
+
+
+
+
+
+
+
 Familia need to cast to release skill. Casting time is about 3 sec. It is not affected by CSPD.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -8644,6 +9753,163 @@ Familia need to cast to release skill. Casting time is about 4 sec. It is not af
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 The charge time is not affected by CSPD.
 
 
@@ -8654,7 +9920,407 @@ The charge time is not affected by CSPD.
 
 
 
+
+
+
+
+
+
+
 The charge time is not affected by CSPD.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -11445,6 +13111,12 @@ Scroll ATK
 
 
 Only data of skill level Lv10 is available.
+
+
+
+
+
+
 "It is enpowered from Fire Release. When the target or self is in #[Ignite], use Fire Release will trigger it. After casting, remove #[Ignite] of the target and self."
 
 Fire Release
@@ -11482,6 +13154,12 @@ Only data of skill level Lv10 is available.
 
 
 
+
+
+
+
+
+
 Sprint to the front 1m of the enemy's side and cause damage.
 
 """Ninjutsu drill"" total skill Lv."
@@ -11508,6 +13186,12 @@ Scroll ATK
 Long Range
 "It may be that this skill sprints in front of the monster first, and then determining the distance and calculating the damage, so it is always activated at SRD."
 "If the main weapon is katana, this skill will change to ""Lightning Flash""."
+
+
+
+
+
+
 
 
 
@@ -11543,6 +13227,12 @@ Long Range
 
 
 
+
+
+
+
+
+
 """Ninjutsu drill"" total skill Lv."
 
 
@@ -11563,6 +13253,12 @@ Long Range
 
 
 Scroll ATK
+
+
+
+
+
+
 
 
 
@@ -11628,6 +13324,16 @@ Scroll ATK
 
 
 
+
+
+
+
+
+
+
+
+
+
 """Ninjutsu drill"" total skill Lv."
 
 
@@ -11653,6 +13359,12 @@ Scroll ATK
 
 
 Scroll ATK
+
+
+
+
+
+
 
 
 
@@ -11710,6 +13422,12 @@ Mortal Surrogate
 
 
 
+
+
+
+
+
+
 Scroll ATK
 
 
@@ -11734,7 +13452,14 @@ Scroll ATK
 
 
 
+
+
+
+
+
 """Ninjutsu drill"" total skill Lv."
+
+
 
 
 
