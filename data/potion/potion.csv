@@ -200,6 +200,7 @@
 ,,map,費戈莊園,
 帶骨小排,stats,max_hp,10%,
 ,,atk,25,
+,,critical_rate,-5%,
 ,duration,time,20:00,
 ,obtain,type,mobs,
 ,,name,弗萊德魯加,
