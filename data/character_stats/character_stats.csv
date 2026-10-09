@@ -165,17 +165,15 @@ thunder_matk,雷槍MATK,,matk,,,,計算結果為0時,斧槍技能專用的基礎
 magic_pierce,魔法貫穿,%,magic_pierce,,#cvalue,~100,變數值為0時,可無視對手一定比例的MDEF，數值為負時將增加對手防禦。
 magic_stability,魔法穩定率,%,stability_magic,,50,1~,,最終魔法傷害將在（魔穩浮動下限%~魔穩浮動上限%）之間，以1%為間距浮動。但當此項超過100%時，浮動上限雖不再增加，卻會提升打出上限值的機率。
 ,,,#,"""物理穩定率÷2""",$stability/2,,,
-magic_random_min,魔穩浮動下限,%,,,$magic_stability,~90,,因穩定造成魔法傷害浮動時，傷害可能獲得的倍率修正最小值，此項最大為90%。
+magic_stability_min,魔穩浮動下限,%,,,$magic_stability,~90,,因穩定造成魔法傷害浮動時，傷害可能獲得的倍率修正最小值，此項最大為90%。
 ,,,,,,,,
-magic_expect_value,魔穩浮動上限,%,stability_magic,,,100~110,,因穩定造成魔法傷害浮動時，傷害可能獲得的倍率修正最大值，基礎為100%。當魔法穩定率達到90%後，每超出1%將使此數值提升1%，最大為110%或120%。
+magic_stability_max,魔穩浮動上限,%,stability_magic,,,100~110,,因穩定造成魔法傷害浮動時，傷害可能獲得的倍率修正最大值，基礎為100%。當魔法穩定率達到90%後，每超出1%將使此數值提升1%，最大為110%或120%。
 ,,,#,"""魔法穩定率溢出""","Math.floor(Math.max(0,$stability+#cvalue*2-80)/2)",,,
 ,,,#,"""基礎值""",100,,,
-magic_expect_value,魔穩期望值,%,,,0,,計算結果為0時,尚未實作。
 ,,,,,,,,
-,,,,,,,,
-magic_crt,魔法暴擊率,,magic_crt_percentage,,$critical_rate,0~,變數值為0時,發生魔法暴擊的機率。超過100%的部分可抵消部分BOSS的抗暴擊能力。
+magic_critical_rate,魔法暴擊率,,magic_critical_rate_conversion_rate,,$critical_rate,0~,變數值為0時,發生魔法暴擊的機率。超過100%的部分可抵消部分BOSS的抗暴擊能力。
 ,,,#,"#mul, ""法術暴擊轉化率""","Math.min(1,#cvalue/100)",,,
-magic_crt_neutral,無屬性魔法暴擊率,,magic_crt_percentage,,$critical_rate,0~,計算結果為0時,僅限主手法杖，使用無屬性的魔法攻擊時，可獲得更高的魔法暴擊率。
+magic_critical_rate_neutral,無屬性魔法暴擊率,,magic_critical_rate_conversion_rate,,$critical_rate,0~,計算結果為0時,僅限主手法杖，使用無屬性的魔法攻擊時，可獲得更高的魔法暴擊率。
 ,,,@staff,"#mul, ""法術暴擊轉化率""","Math.min(1,#cvalue/100)+0.25",,,
 ,,,@1h_sword,#mul,0,,,
 ,,,@2h_sword,#mul,0,,,
@@ -187,7 +185,7 @@ magic_crt_neutral,無屬性魔法暴擊率,,magic_crt_percentage,,$critical_rate
 ,,,@halberd,#mul,0,,,
 ,,,@katana,#mul,0,,,
 ,,,@main.none,#mul,0,,,
-magic_crt_damage,魔法暴擊傷害,%,magic_cd_percentage,,"100+($critical_damage-100)*(Math.min(100,#cvalue)+50)/100",0~,變數值為0時,發生魔法暴擊時的傷害倍率。
+magic_critical_damage,魔法暴擊傷害,%,magic_critical_damage_conversion_rate,,"100+($critical_damage-100)*(Math.min(100,#cvalue)+50)/100",0~,變數值為0時,發生魔法暴擊時的傷害倍率。
 0,防禦,,,,,,,
 def,DEF,,def,,,,,DEF越高，受到物理傷害時的損傷越輕。
 ,,,#,"""裝備防禦""",@armor.def+@additional.def+@special.def+@shield.def,,,
@@ -284,7 +282,7 @@ unsheathe_attack,拔刀攻擊常數,,unsheathe_attack,,,,變數值為0時,發生
 short_range_damage,近距離威力,%,short_range_damage,,100+#cvalue,0~,,在近距離（0~8米未滿）攻擊時，攻擊傷害將乘上此倍率。
 long_range_damage,遠距離威力,%,long_range_damage,,100+#cvalue,0~,,在遠距離（8米以上）攻擊時，攻擊傷害將乘上此倍率。
 total_multiplier,傷害倍率,%,,,100,0~,,用以快速確認當前配置下，所有倍率項的最高效益。計算公式為：「暴擊傷害（計入機率）×近/遠距離威力×拔刀攻擊倍率×對屬性增傷×穩定率期望」，其中近/遠距離威力與屬性增傷將取最高加成者、拔刀倍率高於50%時納入計算公式、角色的MATK大於ATK時，暴擊率、暴擊傷害與穩定率應用魔法計算公式。
-,,,#,"#mul, ""暴擊傷害（計入機率）""","Math.max(Math.min(1,($atk-$matk))*($critical_damage/100-1)*Math.min(100,$critical_rate)/100+1,Math.min(1,($matk-$atk))*($magic_crt_damage/100-1)*Math.min(100,$magic_crt)/100+1)",,,
+,,,#,"#mul, ""暴擊傷害（計入機率）""","Math.max(Math.min(1,($atk-$matk))*($critical_damage/100-1)*Math.min(100,$critical_rate)/100+1,Math.min(1,($matk-$atk))*($magic_critical_damage/100-1)*Math.min(100,$magic_critical_rate)/100+1)",,,
 ,,,#,"#mul, ""距離威力""","Math.max($short_range_damage,$long_range_damage)/100",,,
 ,,,#,"#mul, ""拔刀攻擊倍率""","($unsheathe_attack_multiplier-($unsheathe_attack_multiplier-100)*Math.max(0,Math.min(1,150-$unsheathe_attack_multiplier)))/100",,,
 ,,,@1h_sword,"#mul, ""屬性增傷""","Math.max($stronger_against_neutral,$stronger_against_fire,$stronger_against_water,$stronger_against_earth,$stronger_against_wind,$stronger_against_light,$stronger_against_dark)/100+Math.max(0,Math.min(1,$matk-$atk))*$magic_element_against_damage/100",,,

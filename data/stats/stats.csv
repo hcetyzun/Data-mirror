@@ -128,8 +128,8 @@ invincible_aid_sec,無敵急救 (s),無敵急救 ($vs),無,10,
 pet_exp,寵物獲得EXP,,無,10,
 item_cooldown,道具冷卻,$t$1-d秒::$t+$1-d秒,無,10,
 skill_constant_extra,技能常數,$t$s$v,無,11,1
-magic_crt_percentage,法術暴擊轉化率,$t$v$u,無,11,
-magic_cd_percentage,法術暴傷轉化率,$t$v$u,無,11,
+magic_critical_rate_conversion_rate,法術暴擊轉化率,$t$v$u,無,11,
+magic_critical_damage_conversion_rate,法術暴傷轉化率,$t$v$u,無,11,
 normal_attack_multiplier,普通攻擊倍率,$t$v$u,無,11,1
 normal_attack_constant,普通攻擊常數,$t$s$v,無,11,1
 gempowder_drop_add,晶石粉末掉落量,$t+$v$u,無,10,1
