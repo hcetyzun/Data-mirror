@@ -113,7 +113,7 @@ MEN值越高，增加量越多，最多可累積${$stack.max}層。"
 ,,,stat,max_mp,-(350-50*Lv)
 ,,,,short_range_damage,1
 ,,,,long_range_damage,1
-,,,,accuracy,60+60*Lv
+,,,,accuracy,60*Lv
 ,,,stack,,3
 23,重振力量,5,,,"當對目標命中判定為MISS時，30秒內，ATK增加${$stat.atk}。
 最多可疊加${$stack.max}層。"
