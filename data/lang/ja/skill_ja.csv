@@ -5504,7 +5504,7 @@ Change effect on target of ailment #[Bleed].",,"随等级250开放，双剑始�
 ,,,,,,,,weapon_atk,extra[0]*2*Math.floor(stack/100),%,,,,,
 ,,,,,,,,accuracy,Math.floor(stack/10)*10,,,,,,
 ,,,,,,,,unsheathe_attack_multiplier,"[0,0,3,4,5,6,14,16,18,20][Math.floor(stack/10)-1]",,,,,,
-,,,,,,,,motion_speed,Math.floor(stack/40)*12.5,,,,,,
+,,,,,,,,motion_speed,Math.floor(stack/40)*10,,,,,,
 ,,,,,,,,weapon_base_atk,"[0,0,0,0,0,30,35,40,45,50][Math.floor(stack/10)-1]",,,,,,
 ,,,,,,,,stack_id,1,,,,,,
 ,,,,,,,,end_condition,直到層數歸零時,,,,直到层数归零时,,直到层数归零时
