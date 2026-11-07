@@ -10581,8 +10581,8 @@ Joji (Formula confirm)."
 ,,,,,,,,duration,30,,,,,,
 ,,,,,,,,atk,SLv*2+extra[0]*2,,,,,,
 ,,,,,,,,matk,SLv*2+extra[0]*2,,,,,,
-,,,,,,,,atk.registlet,-SLv*2+extra[0]*2*(0.95-RLv[0]*0.05),,,,,,
-,,,,,,,,matk.registlet,-SLv*2+extra[0]*2*(0.95-RLv[0]*0.05),,,,,,
+,,,,,,,,atk.registlet,-(SLv*2+extra[0]*2*(0.95-RLv[0]*0.05)),,,,,,
+,,,,,,,,matk.registlet,-(SLv*2+extra[0]*2*(0.95-RLv[0]*0.05)),,,,,,
 ,,,,,,-,formula_extra,texts,魔導具精煉值,,,,魔导具精炼值,,魔导具精炼值
 ,,,,,,,,values.0,@C.sub.refining,,,,,,
 ,,,,,,-,effect,name,速度強化,,,,速度强化,,速度强化
@@ -10590,8 +10590,8 @@ Joji (Formula confirm)."
 ,,,,,,,,duration,30,,,,,,
 ,,,,,,,,aspd,SLv*25+extra[0]*50,,,,,,
 ,,,,,,,,cspd,SLv*25+extra[0]*50,,,,,,
-,,,,,,,,aspd.registlet,-SLv*25+extra[0]*50*(0.95-RLv[1]*0.05),,,,,,
-,,,,,,,,cspd.registlet,-SLv*25+extra[0]*50*(0.95-RLv[1]*0.05),,,,,,
+,,,,,,,,aspd.registlet,-(SLv*25+extra[0]*50*(0.95-RLv[1]*0.05)),,,,,,
+,,,,,,,,cspd.registlet,-(SLv*25+extra[0]*50*(0.95-RLv[1]*0.05)),,,,,,
 ,,,,,,-,formula_extra,texts,魔導具精煉值,,,,魔导具精炼值,,魔导具精炼值
 ,,,,,,,,values.0,@C.sub.refining,,,,,,
 ,,,,,,-,effect,name,專注強化,,,,专注强化,,专注强化
@@ -10599,8 +10599,8 @@ Joji (Formula confirm)."
 ,,,,,,,,duration,30,,,,,,
 ,,,,,,,,accuracy,35+SLv*2+extra[0]*3,,,,,,
 ,,,,,,,,critical_rate,10+SLv*2+extra[0]*3,,,,,,
-,,,,,,,,accuracy.registlet,-35+SLv*2+extra[0]*3*(0.95-RLv[2]*0.05),,,,,,
-,,,,,,,,critical_rate.registlet,-10+SLv*2+extra[0]*3*(0.95-RLv[2]*0.05),,,,,,
+,,,,,,,,accuracy.registlet,-(35+SLv*2+extra[0]*3*(0.95-RLv[2]*0.05)),,,,,,
+,,,,,,,,critical_rate.registlet,-(10+SLv*2+extra[0]*3*(0.95-RLv[2]*0.05)),,,,,,
 ,,,,,,-,formula_extra,texts,魔導具精煉值,,,,魔导具精炼值,,魔导具精炼值
 ,,,,,,,,values.0,@C.sub.refining,,,,,,
 ,,,,,,-,list,text,處於以上之任意一種狀態時，不可再施展此技能。,,,,处于以上之任意一种状态时，不可再施展此技能。,,处于以上之任意一种状态时，不可再施展此技能。
