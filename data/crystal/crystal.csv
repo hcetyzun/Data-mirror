@@ -429,7 +429,7 @@
 功夫龍波姆III,stats,atk,12%,
 ,,agi,10%,
 ,,aggro,-20,
-,,absolute_dodge,10,
+,,absolute_dodge,10,knuckle
 ,other,enhancer,功夫龍波姆II,
 死靈妖兔,stats,max_hp,-25%,
 ,,matk,6%,
