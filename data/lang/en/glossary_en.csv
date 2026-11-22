@@ -195,7 +195,7 @@ Invincible,
 Bloodsucker,
 ,
 ,
-((!Sap))：Consumes((MaxHP×(10-Combo Position)%))HP，Increased skill damage for((10+Combo Position))%。,
+,((!Sap))：Consumes((MaxHP×(10-Combo Position)%))HP，Increased skill damage for((10+Combo Position))%。
 ,
 Tough,
 ,
