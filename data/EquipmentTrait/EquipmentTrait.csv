@@ -52,7 +52,7 @@ TEC值越高，增加量越多，每10秒發動一次。"
 ,,,stat,atk,5+5*Lv+TEC/(6-Lv)
 ,,,,matk,5+5*Lv+TEC/(6-Lv)
 ,,,,cspd,10+5*TEC/(6-Lv)
-,,,,tips,ATK部分無誤。但CSPD部分，TEC255時，1等數值為255，3等數值為529。
+,,,text,tips,ATK部分無誤。但CSPD部分，TEC255時，1等數值為255，3等數值為529。
 7,變速強化,5,,,"對敵人造成傷害時，3秒內，ASPD增加${$stat.aspd}。
 最多可疊加${$stack.max}層。"
 ,,,stat,aspd,Lv*20
